@@ -20,13 +20,13 @@ $ go get github/go-ego/cors
 
 Import it in your code:
 
-```go
+```Go
 import "github.com/go-ego/cors"
 ```
 
 ### Canonical example:
 
-```go
+```Go
 package main
 
 import (
@@ -60,7 +60,7 @@ func main() {
 
 ### Using DefaultConfig as start point
 
-```go
+```Go
 func main() {
 	router := ego.Default()
 	// - No origin allowed by default
@@ -79,7 +79,7 @@ func main() {
 
 ### Default() allows all origins
 
-```go
+```Go
 func main() {
 	router := ego.Default()
 	// same as
