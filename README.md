@@ -69,7 +69,7 @@ func main() {
 	// - Preflight requests cached for 12 hours
 	config := cors.DefaultConfig()
 	config.AllowOrigins = []string{"http://google.com"}
-	config.AddAllowOrigins("http://facebook.com")
+	// config.AddAllowOrigins("http://facebook.com")
 	// config.AllowOrigins == []string{"http://google.com", "http://facebook.com"}
 
 	router.Use(cors.New(config))
